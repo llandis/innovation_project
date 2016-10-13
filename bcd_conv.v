@@ -1,4 +1,3 @@
-//unfinished
 module bcd_conv
 (
 	input [6:0] x,
@@ -35,7 +34,7 @@ module bcd_conv
 			default: seg0 = 7'b111_1111;
 		endcase
 	end 
-	else if (x >= 10 & x < 20) begin
+	else if (x >= 10 && x < 20) begin
 		x_temp = x - 10;
 		case (x_temp)
 			0: seg0 = ZERO;
@@ -52,22 +51,22 @@ module bcd_conv
 		endcase
 		seg1 = ONE;
 	end
-	else if (x >= 20 & x < 30) begin
-	x_temp = x - 20;
-		case (x_temp)
-			0: seg0 = ZERO;
-			1: seg0 = ONE;
-			2: seg0 = TWO;
-			3: seg0 = THREE;
-			4: seg0 = FOUR;
-			5: seg0 = FIVE;
-			6: seg0 = SIX;
-			7: seg0 = SEVEN;
-			8: seg0 = EIGHT;
-			9: seg0 = NINE;
-			default: seg0 = 7'b111_1111;
-		endcase
-	seg1 = TWO;
+	else if (x >= 20 && x < 30) begin
+		x_temp = x - 20;
+			case (x_temp)
+				0: seg0 = ZERO;
+				1: seg0 = ONE;
+				2: seg0 = TWO;
+				3: seg0 = THREE;
+				4: seg0 = FOUR;
+				5: seg0 = FIVE;
+				6: seg0 = SIX;
+				7: seg0 = SEVEN;
+				8: seg0 = EIGHT;
+				9: seg0 = NINE;
+				default: seg0 = 7'b111_1111;
+			endcase
+		seg1 = TWO;
 	end	
 	
 endmodule
