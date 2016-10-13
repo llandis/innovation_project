@@ -8,17 +8,17 @@ module sequencer(
   output ROM_addr,
   output seq_num,
   output LEDS,
- initial begin
+  always ( ) begin
    // seq_num = 0;
-    if (pb_seq_up == 1 & pb_seq_dn == 0) begin
-      seq_num = seq_num + 1;
-    end
-    else if (pb_seq_up == 0 & pb_seq_dn == 1) begin
-      seq_num = seq_num - 1;
-    end
-    else if (pb_seq_up == 0 & pb_seq_dn ==0) begin
-      seq_num = seq_num
-    end
+   // if (pb_seq_up == 1 & pb_seq_dn == 0) begin
+    //  seq_num = seq_num + 1;
+   // end
+   // else if (pb_seq_up == 0 & pb_seq_dn == 1) begin
+   //   seq_num = seq_num - 1;
+   // end
+   // else if (pb_seq_up == 0 & pb_seq_dn ==0) begin
+     // seq_num = seq_num
+   // end
   end
 );
 endmodule
