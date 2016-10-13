@@ -11,11 +11,11 @@ module seg_disp
 	//rom_addr
 	
 	bcd_conv seq(SW[6:0], HEX0, HEX1);
-	//tie the rest of the 7 segs to the ground for now
-	HEX2 = 7'b111_1111;
-	HEX3 = 7'b111_1111;
-	HEX4 = 7'b111_1111;
-	HEX5 = 7'b111_1111;
-	HEX6 = 7'b111_1111;
+	//tie the rest of the hex to the ground for now
+	assign HEX2 = 7'b111_1111;
+	assign HEX3 = 7'b111_1111;
+	assign HEX4 = 7'b111_1111;
+	assign HEX5 = 7'b111_1111;
+	assign HEX6 = 7'b111_1111;
 
 endmodule
