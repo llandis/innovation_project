@@ -1,4 +1,4 @@
-module sequencer(
+module throttle(
 input CLK_50,
 input reset,
 input pb_freq_up,
