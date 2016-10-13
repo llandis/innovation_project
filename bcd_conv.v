@@ -20,6 +20,7 @@ module bcd_conv
 
 	always @(x)
 	if(x < 10) begin
+		seg1 = ZERO;
 		case (x)
 			0: seg0 = ZERO;
 			1: seg0 = ONE;
