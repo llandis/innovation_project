@@ -1,10 +1,10 @@
 RAM2Port	RAM2Port_inst (
-	.data ( data_sig ), //Length 18
-	.rdaddress ( rdaddress_sig ), //Length 8
+	.data ( data_sig ),
+	.rdaddress ( rdaddress_sig ), 
 	.rdclock ( rdclock_sig ),
 	.rden ( rden_sig ),
-	.wraddress ( wraddress_sig ), //Length 8
+	.wraddress ( wraddress_sig ), 
 	.wrclock ( wrclock_sig ),
 	.wren ( wren_sig ),
-	.q ( q_sig ) //Length 18
+	.q ( q_sig )
 	);
