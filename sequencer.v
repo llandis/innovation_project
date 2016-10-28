@@ -6,8 +6,7 @@ module sequencer(
   input reset,
 
   output rom_addr,
-  output seq_num,
-  output LEDS,
+  output seq_num;
   always ( ) begin
    // seq_num = 0;
    // if (pb_seq_up == 1 & pb_seq_dn == 0) begin
