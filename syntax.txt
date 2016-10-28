@@ -1,0 +1,33 @@
+This is all the agreed syntax for the top level.
+
+seg_disp:
+  inputs:
+    freq_num
+    seq_num
+    rom_addr
+  outputs:
+    freq_7seg
+    seq_7seg
+    rom_7seg
+
+throttle:
+  inputs:
+    CLK_50
+    reset
+    pb_freq_up
+    pb_freq_dw
+   outputs:
+    slow_clk
+    freq_num
+
+sequencer:
+  inputs:
+    pb_seq_up
+    pb_seq_dw
+    reset
+    slow_clk
+    CLK_50
+   outputs:
+    ROM_ADDR
+    seq_num
+    LEDR
