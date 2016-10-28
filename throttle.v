@@ -3,8 +3,6 @@ input CLK_50,
 input reset,
 input pb_freq_up,
 input pb_freq_dn,
-
-  
   
 output slow_clk,
 output freq_num,
@@ -53,8 +51,41 @@ begin
 			count = count;
 			end
 		end
+	
+assign freq_num = count;
 
-assign N = count; 
+	if (freq_num = 0)
+		begin
+			N = 2500000;
+			WIDTH = 22;
+		end
+	else if (freq_num = 1)
+		begin
+			N = 12500000;
+			WIDTH = 21;
+		end
+	else if (freq_num = 2)
+		begin
+			N = 830000;
+			WIDTH = 20;
+		end
+	else if (freq_num = 3)
+		begin
+			N = 625000;
+			WIDTH = 20;
+		end
+	else if (freq_num = 4)
+		begin
+			N = 500000;
+			WIDTH = 19;
+		end
+	else if (freq_num = 5)
+		begin
+			N = 416000;
+			WIDTH = 19;
+		end
+	end
+		
 clk_div div1 (WIDTH, N, clk,reset, slow_clk);
 	
 end
