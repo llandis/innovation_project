@@ -1,12 +1,12 @@
-module debouncer (noisy,clk_1KHz,debounced);
+module debouncer (noisy,clk_50,debounced);
 
-input wire clk_1KHz, noisy;
+input wire clk_50, noisy;
 output reg debounced;
 
 reg [7:0] reg;
 
 //reg: wait for stable
-always @ (posedge clk_1KHz) 
+  always @ (posedge clk_50) 
 begin
 reg[7:0] <= {reg[6:0],noisy}; //shift register
 if(reg[7:0] == 8'b00000000)
