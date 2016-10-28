@@ -9,45 +9,53 @@ input pb_freq_dn,
 output slow_clk,
 output freq_num,
 );
-wire dbUP
-wire dbDN
+	
+wire WIDTH;
+wire N;
+wire dbUP;
+wire dbDN;
 
-debouncer (pb_freq_up,CLK_50,dbUP);
-debouncer (pb_freq_dn,CLK_50,dbDN);
+assign count = 0;
+
+debouncer debounce1(pb_freq_up,CLK_50,dbUP);
+debouncer debounce2(pb_freq_dn,CLK_50,dbDN);
 
 always @(posedge CLK_50)
 begin
 	if (reset == 1)
 		begin 
-		freq_num = 0; 
+		count = 0; 
 		end
 	else 
 		begin
-		freq_num = freq_num;
+		count = count;
 		end
-	if (freq_num = 0 || freq_num=5)
+	if ((count == 0 && dbDN == 1 && dbUP == 0) || (count == 5 && dbDN == 0 && dbUP ==1))
          	begin
-		freq_num=freq_num;
+		count = count;
 		end	
 	else 
 		begin
 		if (dbUP == 1 & dbDN == 0)
-    			begin
-     			 freq_num = freq_num +1;
+    		begin
+     			 count = count +1;
     			end
 		else if (dbUP ==0 & dbDN == 1)
 			begin 
-		 	freq_num = freq_num - 1; 
+		 	count = count - 1; 
 			end
 		else if (dbUP == 1 & dbDN == 1)
 			begin
-			 freq_num = freq_num;
+			 count = count;
 			end
-		else 
+		else if (dbUP == 0 && dbDN == 0)
 			begin
-			freq_num = freq_num;
+			count = count;
 			end
 		end
+
+assign N = count; 
+clk_div div1 (WIDTH, N, clk,reset, slow_clk);
 	
 end
 endmodule
@@ -71,5 +79,40 @@ else if(reg[7:0] == 8'b11111111)
 else debounced <= debounced;
 end
 
+endmodule
+
+module clk_div (WIDTH, N, clk,reset, slow_clk);
+  
+	input WIDTH = 3, // Width of the register required
+	input N = 6// We will divide by 12 for example in this case
+	input clk;
+	input reset;
+	output slow_clk;
+	 
+	reg [WIDTH-1:0] r_reg;
+	wire [WIDTH-1:0] r_nxt;
+	reg clk_track;
+	 
+	always @(posedge clk or posedge reset)
+	 
+	begin
+	  if (reset)
+	     begin
+	        r_reg <= 0;
+	      clk_track <= 1'b0;
+	     end
+	 
+	  else if (r_nxt == N)
+	        begin
+	           r_reg <= 0;
+	           clk_track <= ~clk_track;
+	         end
+	 
+	  else 
+	      r_reg <= r_nxt;
+	end
+	 
+	assign r_nxt = r_reg+1;            
+	assign slow_clk = clk_track;
 endmodule
 
