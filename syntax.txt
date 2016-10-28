@@ -15,7 +15,7 @@ throttle:
     CLK_50
     reset
     pb_freq_up
-    pb_freq_dw
+    pb_freq_dn
    outputs:
     slow_clk
     freq_num
@@ -23,7 +23,7 @@ throttle:
 sequencer:
   inputs:
     pb_seq_up
-    pb_seq_dw
+    pb_seq_dn
     reset
     slow_clk
     CLK_50
