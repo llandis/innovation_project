@@ -16,14 +16,14 @@ wire [9:0] address_b_sig;
 throttle i_throttle (
   .CLK_50(CLK_50),
   .reset(1'b0),
-	.pb_freq_up(pb[3]),
-	.pb_freq_dn(pb[2]),
+	.pb_freq_up(pb_freq_up),
+	.pb_freq_dn(pb_freq_dn),
   .slow_clk(slow_clk),
         .freq_num(freq_num) );
   
 sequencer i_sequencer
-	.pb_seq_up(pb[1]),
-	.pb_seq_dn(pb[0]),
+	.pb_seq_up(pb_seq_up),
+	.pb_seq_dn(pb_seq_dn),
   .slow_clk(slow_clk),
   .reset(1'b0),
   .rom_addr(address_b_sig),
@@ -43,34 +43,34 @@ RAM2Port	RAM2Port_inst (
   
   
 ROM2Port	ROM2Port_inst (
-	.address_a ( address_a_sig ),
+	.address_a ( //address_a_sig ),
 	.address_b ( address_b_sig ),
-	.inclock ( inclock_sig ),
-	.outclock ( outclock_sig ),
-	.q_a ( q_a_sig ),
+	.inclock ( CLK_50 ),
+	.outclock ( slow_clk ),
+	.q_a ( //q_a_sig ),
 	.q_b ( LEDR )
 	);
   
 debouncer i_debouncer_pb0 (
 	.noisy (pb[0]),
 	.clk_50 (CLK_50),
-  .debounced()
+	.debounced(pb_freq_dn)
   );
  
 debouncer i_debouncer_pb1 (
 	.noisy (pb[1]),
 	.clk_50 (CLK_50),
-  .debounced()
+	.debounced(pb_freq_up)
   );
   
 debouncer i_debouncer_pb2 (
 	.noisy (pb[2]),
 	.clk_50 (CLK_50),
-  .debounced()
+	.debounced(pb_seq_dn)
   );
  
  debouncer i_debouncer_pb3 (
 	 .noisy (pb[3]),
 	 .clk_50 (CLK_50),
-  .debounced()
+	 .debounced(pb_seq_up)
   );
