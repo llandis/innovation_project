@@ -28,6 +28,6 @@ sequencer:
     slow_clk
     CLK_50
    outputs:
-    ROM_ADDR
+    rom_addr
     seq_num
     LEDR
