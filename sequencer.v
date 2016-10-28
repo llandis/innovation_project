@@ -5,7 +5,7 @@ module sequencer(
   input clk_50,
   input reset,
 
-  output ROM_addr,
+  output rom_addr,
   output seq_num,
   output LEDS,
   always ( ) begin
