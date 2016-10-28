@@ -10,26 +10,26 @@ output slow_clk,
 output freq_num,
 );
 
-endmodule
-
-
-module clock_divider(
-input fast_clk,
-output slow_clk);
-
-parameter COUNTER_SIZE = 24;
-parameter COUNTER_MAX_COUNT = (2 ** COUNTER_SIZE) - 1;
-
-reg [COUNTER_SIZE -1:0] count;
-
-always @(posedge fast_clock)
+	
+always @(posedge CLK_50)
 begin
-if(count==COUNTER_MAX_COUNT)
-	count<=0;
-else
-	count<=count+1;
+	if (pb_freq_up == 1 & pb_freq_dn == 0)
+    		begin
+     		 freq_num = freq_num +1;
+    		end
+	else if (pb_freq_up ==0 & pb_freq_dn == 1)
+		begin 
+		 freq_num = freq_num - 1; 
+		end
+	else if (pb_freq_up == 1 & pb_freq_dn == 1)
+		begin
+		 freq_num = freq_num;
+		end
+	else (pb_freq_up == 0 & pb_freq_dm == 0)
+		begin
+		freq_num = freq_num;
+		end
 end
-
-assign slow_clock = count[COUNTER_SIZE -1];
-
 endmodule
+
+
