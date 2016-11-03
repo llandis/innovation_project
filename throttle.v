@@ -21,35 +21,23 @@ debouncer debounce2(pb_freq_dn,CLK_50,dbDN);
 always @(posedge CLK_50)
 begin
 	if (reset == 1)
-		begin 
 		count = 0; 
-		end
-	else 
-		begin
+	else
 		count = count;
-		end
+
+	
 	if ((count == 0 && dbDN == 1 && dbUP == 0) || (count == 5 && dbDN == 0 && dbUP ==1))
-         	begin
 		count = count;
-		end	
 	else 
 		begin
 		if (dbUP == 1 & dbDN == 0)
-    		begin
      			 count = count +1;
-    			end
 		else if (dbUP ==0 & dbDN == 1)
-			begin 
-		 	count = count - 1; 
-			end
+		 	count = count - 1;
 		else if (dbUP == 1 & dbDN == 1)
-			begin
 			 count = count;
-			end
 		else if (dbUP == 0 && dbDN == 0)
-			begin
 			count = count;
-			end
 		end
 	
 assign freq_num = count;
@@ -86,7 +74,7 @@ assign freq_num = count;
 		end
 	end
 		
-clk_div div1(WIDTH, N, clk,reset, slow_clk);
+	clk_div div1(WIDTH, N, CLK_50,reset, slow_clk);
 	
 end
 endmodule
