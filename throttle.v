@@ -22,9 +22,6 @@ always @(posedge CLK_50)
 begin
 	if (reset == 1)
 		count = 0; 
-	else
-		count = count;
-
 	
 	if ((count == 0 && dbDN == 1 && dbUP == 0) || (count == 5 && dbDN == 0 && dbUP ==1))
 		count = count;
