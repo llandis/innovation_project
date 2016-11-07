@@ -27,11 +27,11 @@ begin
 		count = count;
 	else 
 		begin
-		if (dbUP == 1 & dbDN == 0)
+		if (dbUP == 1 && dbDN == 0)
      			 count = count +1;
-		else if (dbUP ==0 & dbDN == 1)
+		else if (dbUP ==0 && dbDN == 1)
 		 	count = count - 1;
-		else if (dbUP == 1 & dbDN == 1)
+		else if (dbUP == 1 && dbDN == 1)
 			 count = count;
 		else if (dbUP == 0 && dbDN == 0)
 			count = count;
@@ -77,15 +77,15 @@ end
 endmodule
 
 
-module debouncer (noisy,clk_50,debounced);
+module debouncer (noisy,CLK_50,debounced);
 
-input wire clk_50, noisy;
+input wire CLK_50, noisy;
 output reg debounced;
 
 reg [7:0] reg;
 
 //reg: wait for stable
-  always @ (posedge clk_50) 
+	always @ (posedge CLK_50) 
 begin
 reg[7:0] <= {reg[6:0],noisy}; //shift register
 if(reg[7:0] == 8'b00000000)
@@ -99,9 +99,9 @@ endmodule
 
 module clk_div (WIDTH, N, clk,reset, slow_clk);
   
-	input WIDTH = 3, // Width of the register required
-	input N = 6// We will divide by 12 for example in this case
-	input clk;
+	input WIDTH
+	input N 
+	input CLK_50;
 	input reset;
 	output slow_clk;
 	 
@@ -109,7 +109,7 @@ module clk_div (WIDTH, N, clk,reset, slow_clk);
 	wire [WIDTH-1:0] r_nxt;
 	reg clk_track;
 	 
-	always @(posedge clk or posedge reset)
+	always @(posedge CLK_50 or posedge reset)
 	 
 	begin
 	  if (reset)
@@ -123,12 +123,11 @@ module clk_div (WIDTH, N, clk,reset, slow_clk);
 	           r_reg <= 0;
 	           clk_track <= ~clk_track;
 	         end
-	 
 	  else 
 	      r_reg <= r_nxt;
 	end
 	 
-	assign r_nxt = r_reg+1;            
+	assign r_nxt = r_reg + 1;            
 	assign slow_clk = clk_track;
 endmodule
 
