@@ -57,6 +57,7 @@ module taglist_gen(
 				end
 				else if (lastEnd == 2'b00) begin
 					seqWire = seqWire + 10'b00_0000_0001;
+					RAMstateUpdate = SCAN;
 				end
 			
 			end
