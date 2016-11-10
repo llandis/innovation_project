@@ -13,8 +13,6 @@ vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightr
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_ROM_state
 
-do wave1.do
-
 view structure
 view signals
 run -all
