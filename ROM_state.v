@@ -21,17 +21,17 @@
 `timescale 1ns/1ns
 
 module ROM_state (
-    clock_n,data_in[31:0],at_end,pb_seq_up,pb_seq_dn,reset,
+    clock_n,data_in[31:0],pb_seq_up,pb_seq_dn,reset,
     load,addr[9:0],ram_counter[6:0],at_end_rst,addr_inc,ram_counter_inc,ram_counter_dec);
 
     input clock_n;
     input [31:0] data_in;
-	 input at_end;
+	 //input at_end;
 	 input pb_seq_up;
 	 input pb_seq_dn;
 	 input reset;
 	tri0 [31:0] data_in;
-	 tri0 at_end;
+	// tri0 at_end;
 	 tri0 pb_seq_up;
 	 tri0 pb_seq_dn;
 	 tri0 reset;
@@ -42,6 +42,7 @@ module ROM_state (
     output addr_inc;
     output ram_counter_inc;
     output ram_counter_dec;
+	reg at_end;
     reg load;
     reg [9:0] addr;
     reg [6:0] ram_counter;
@@ -89,12 +90,12 @@ module ROM_state (
 		end
 		
 		if(end_seq == addr)
-			at_end <= (~at_end_rst)
+			at_end <= (~at_end_rst);
 		else if(end_seq != addr)
 			at_end <= 0;
 	end
 
-    always @(fstate or reset_n or start or end_seq or at_end or last_ram or pb_seq_up or pb_seq_dn or reset)
+    always @(fstate or end_seq or at_end or last_ram or pb_seq_up or pb_seq_dn or reset)
     begin
         if (reset) begin
             reg_fstate <= INIT;
@@ -155,9 +156,9 @@ module ROM_state (
                 BOT_SEQ: begin
                     if ((at_end == 1'b0))
                         reg_fstate <= IN_SEQ;
-                    else if ((pb_seq_up == 1'b1 && pb_seq_dn = 1'b0))
+                    else if ((pb_seq_up == 1'b1 && pb_seq_dn == 1'b0))
                         reg_fstate <= NEXT_SEQ;
-                    else if ((pb_seq_dn == 1'b1 && pb_seq_up = 1'b0))
+                    else if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
                         reg_fstate <= PREV_SEQ;
                     else if ((pb_seq_dn == 1'b1 && addr == 10'b00_0000_0000))
                         reg_fstate <= LAST_SEQ;
@@ -173,7 +174,7 @@ module ROM_state (
                     load <= 1'b1;
                 end
                 NEXT_SEQ: begin
-                    if ((pb_up == 0))
+                    if ((pb_seq_up == 0))
                         reg_fstate <= IN_SEQ;
                     // Inserting 'else' block to prevent latch inference
                     else
