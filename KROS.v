@@ -21,7 +21,7 @@ throttle i_throttle (
   .slow_clk(slow_clk),
         .freq_num(freq_num) );
   
-sequencer i_sequencer
+sequencer i_sequencer (
 	.pb_seq_up(pb_seq_up),
 	.pb_seq_dn(pb_seq_dn),
   .slow_clk(slow_clk),
@@ -69,7 +69,7 @@ debouncer i_debouncer_pb2 (
 	.debounced(pb_seq_dn)
   );
  
- debouncer i_debouncer_pb3 (
+debouncer i_debouncer_pb3 (
 	 .noisy (pb[3]),
 	 .clk_50 (CLK_50),
 	 .debounced(pb_seq_up)
