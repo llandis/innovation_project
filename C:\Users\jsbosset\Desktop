@@ -80,4 +80,5 @@ module taglist_gen(
 				ramData [0] = lastEnd [0];
 				w_e_RAM = 1'b1;
 			end
-		
+			
+			endmodule		
