@@ -4,77 +4,59 @@ input reset,
 input pb_freq_up,
 input pb_freq_dn,
   
-output slow_clk,
+output reg slow_clk,
 output freq_num
 );
 	
-integer WIDTH;
-integer N;
+
 wire dbUP;
 wire dbDN;
 
-integer count;
+reg [2:0] MUX_SEL;
 
+parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
 
+wire [COUNT_SIZE-1:0]count;
 
 debouncer debounce1(pb_freq_up,CLK_50,dbUP);
 debouncer debounce2(pb_freq_dn,CLK_50,dbDN);
 
-always @(posedge CLK_50)
+always @(posedge CLK_50 or posedge reset)
 begin
 	if (reset == 1)
-		count = 0; 
-	
-	if ((count == 0 && dbDN == 1 && dbUP == 0) || (count == 5 && dbDN == 0 && dbUP ==1))
-		count = count;
+		MUX_SEL = 0; 
+	else if ((MUX_SEL == 3'b000 && dbDN == 1 && dbUP == 0) || (MUX_SEL == 3'd5 && dbDN == 0 && dbUP ==1))
+		MUX_SEL = MUX_SEL;
 	else 
 		begin
 		if (dbUP == 1 && dbDN == 0)
-     			 count = count +1;
+     		MUX_SEL = MUX_SEL + 3'b001;
 		else if (dbUP ==0 && dbDN == 1)
-		 	count = count - 1;
-		else if (dbUP == 1 && dbDN == 1)
-			 count = count;
-		else if (dbUP == 0 && dbDN == 0)
-			count = count;
+		 	MUX_SEL = MUX_SEL - 3'b001;
 		end
 		
-
-	if (count == 0)
-		begin
-			N = 2500000;
-			WIDTH = 22;
-		end
-	else if (count == 1)
-		begin
-			N = 12500000;
-			WIDTH = 21;
-		end
-	else if (count == 2)
-		begin
-			N = 830000;
-			WIDTH = 20;
-		end
-	else if (count == 3)
-		begin
-			N = 625000;
-			WIDTH = 20;
-		end
-	else if (count == 4)
-		begin
-			N = 500000;
-			WIDTH = 19;
-		end
-	else if (count == 5)
-		begin
-			N = 416000;
-			WIDTH = 19;
-		end
 	end
 		
-	clk_div div1(WIDTH, N, CLK_50,reset, slow_clk);
+	clk_div div1(.clk(CLK_50),.reset(reset),.count(count));
 
-	assign freq_num = count;
+	assign freq_num = MUX_SEL;
+	
+	always @(count or MUX_SEL)
+	begin
+
+		case(MUX_SEL)
+		0: slow_clk = count[COUNT_SIZE-1];
+		1: slow_clk = count[COUNT_SIZE1];
+		2: slow_clk = count[COUNT_SIZE2];
+		3: slow_clk = count[COUNT_SIZE3];
+		4: slow_clk = count[COUNT_SIZE4];
+		5: slow_clk = count[COUNT_SIZE5];
+		default: slow_clk = count[COUNT_SIZE5];
+		endcase
+		
+	end
+		
+
 endmodule
 
 
@@ -98,37 +80,27 @@ end
 
 endmodule
 
-module clk_div (WIDTH, N, clk,reset, slow_clk);
+module clk_div (
   
-	input wire WIDTH; 
-	input wire N;
-	input clk;
-	input reset;
-	output slow_clk;
-	 
-	reg [WIDTH-1:0] r_reg;
-	wire [WIDTH-1:0] r_nxt;
-	reg clk_track;
-	 
+	input clk,
+	input reset,
+	output reg [COUNT_SIZE-1:0]count
+	);
+	
+	parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
+	parameter MAX_COUNT = ((2 * 50000000) -1); 
+	
+	
 	always @(posedge clk or posedge reset)
-	 
-	begin
-	  if (reset)
-	     begin
-	        r_reg <= 0;
-	      clk_track <= 1'b0;
-	     end
-	 
-	  else if (r_nxt == N)
-	        begin
-	           r_reg <= 0;
-	           clk_track <= ~clk_track;
-	         end
-	 
-	  else 
-	      r_reg <= r_nxt;
-	end
-	 
-	assign r_nxt = r_reg+1;            
-	assign slow_clk = clk_track;
+	begin 
+	
+	if (reset == 1)
+		count = 0;
+	else if (count == MAX_COUNT)
+		count = 0;
+	else 
+		count = count +1;
+	end 
+	           
+	
 endmodule
