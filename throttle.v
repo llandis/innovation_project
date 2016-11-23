@@ -16,10 +16,12 @@ reg [2:0] MUX_SEL;
 
 parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
 
+
 wire [COUNT_SIZE-1:0]count;
 
-debouncer debounce1(pb_freq_up,CLK_50,dbUP);
-debouncer debounce2(pb_freq_dn,CLK_50,dbDN);
+debouncer debounce1(pb_freq_up,CLK_50,dbUP,reset);
+debouncer debounce2(pb_freq_dn,CLK_50,dbDN,reset);
+
 
 always @(posedge CLK_50 or posedge reset)
 begin
@@ -60,34 +62,47 @@ begin
 endmodule
 
 
-module debouncer (noisy,clk_50,debounced);
+module debouncer (noisy,clk_50,debounced,reset);
 
-input wire clk_50, noisy;
-output reg debounced;
+input wire clk_50, noisy, reset;
+output debounced;
+
+reg db_8cycle;
+reg db_8cycle_d1;
 
 reg [7:0] reg1;
 
 //reg: wait for stable
-  always @ (posedge clk_50) 
+  always @ (posedge clk_50 or reset) 
 begin
 	reg1[7:0] <= {reg1[6:0],noisy}; //shift register
-		if (reg1[7:0] == 8'b00000000)
-			debounced <= 1'b0;
+		if (reset) reg1 = 8'b0000_0000;
+		else if (reg1[7:0] == 8'b00000000)
+			db_8cycle <= 1'b0;
 		else if (reg1[7:0] == 8'b11111111)
-			debounced <= 1'b1;
-		else debounced <= debounced;
+			db_8cycle <= 1'b1;
+		else db_8cycle <= db_8cycle;
+		
+		db_8cycle_d1 = db_8cycle;
+		
 end
+
+assign debounced = db_8cycle & ~db_8cycle_d1;
+
+
 
 endmodule
 
 module clk_div (
-  
+ 
 	input clk,
 	input reset,
-	output reg [COUNT_SIZE-1:0]count
+	output  reg [25:0] count
 	);
 	
 	parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
+
+
 	parameter MAX_COUNT = ((2 * 50000000) -1); 
 	
 	
