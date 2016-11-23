@@ -20,11 +20,12 @@ module taglist_gen(
 	
 	always @ (posedge clk_1KHz)
 	begin
-		if (clk_1KHz) begin
-			RAMstate <= RAMstateUpdate;
-		end
+		
 		if (reset) begin
 			RAMstate <= INIT0;
+		end
+		else begin
+			RAMstate <= RAMstateUpdate;
 		end
 	end
 	
