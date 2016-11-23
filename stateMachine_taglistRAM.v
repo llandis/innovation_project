@@ -1,15 +1,15 @@
 module taglist_gen(
-	input reg clk_1KHz,
-	input reg reset,
-	input wire [1:0] lastEnd,
-	output wire [31:0] ramData,
-	output wire [6:0] seqNum,
+	input clk_1KHz,
+	input reset,
+	input [1:0] lastEnd,
+	output reg [31:0] ramData,
+	output reg [6:0] seqNum,
 	output reg w_e_RAM,
 	output reg [9:0] seqWire
 	);
 
 	
-	reg [2:0] pad = 3'b000; //establish registers
+
 	reg [9:0] first = 10'b00_0000_0000;
 	reg [9:0] firstNext = 10'b00_0000_0000;
 	
@@ -24,7 +24,7 @@ module taglist_gen(
 			RAMstate <= RAMstateUpdate;
 		end
 		if (reset) begin
-			RAMstate = INIT0;
+			RAMstate <= INIT0;
 		end
 	end
 	
@@ -34,14 +34,13 @@ module taglist_gen(
 			
 			INIT0: begin
 				w_e_RAM <= 1'b0;
-				ramData <= 32b'0000_0000_0000_0000_0000_0000_0000_0000;
+				ramData <= 32'b0000_0000_0000_0000_0000_0000_0000_0000;
 				first <= 10'b00_0000_0000;
 				firstNext <= 10'b00_0000_0000;
 				seqNum <= 7'b000_0000;
 				
 				seqWire <= 10'b00_0000_0000;
-				reg tic <= 1'b0;
-				RAMstateUpdate = SCAN;
+				RAMstateUpdate <= SCAN;
 				
 			end
 			
@@ -51,19 +50,18 @@ module taglist_gen(
 					w_e_RAM <= 1'b0;
 					seqNum <= seqNum + 7'b000_0001;
 				end
-				first = firstNext;
+				first <= firstNext;
 				
 				if (lastEnd == 2'b11 ) begin
 					RAMstateUpdate=END_ROM;
 				end
 				else if (lastEnd == 2'b10) begin
-					RAMstateUpdate = END_SEQ;
+					RAMstateUpdate <= END_SEQ;
 				end
-				else if (lastEnd == 2'b00) begin
-					seqWire = seqWire + 10'b00_0000_0001;
-					RAMstateUpdate = SCAN;
+				else begin
+					seqWire <= seqWire + 10'b00_0000_0001;
+					RAMstateUpdate <= SCAN;
 				end
-			
 			end
 			
 			END_SEQ: begin
@@ -73,8 +71,8 @@ module taglist_gen(
 				ramData [27:21] <= seqNum;
 				ramData [0] <= lastEnd [0];
 				firstNext = seqWire + 10'b00_0000_0001;
-				w_e_RAM = 1'b1; 
-				RAMstateUpdate = SCAN;
+				w_e_RAM <= 1'b1; 
+				RAMstateUpdate <= SCAN;
 			end
 			
 	
@@ -84,7 +82,7 @@ module taglist_gen(
 				ramData [10:1]  <= seqWire;
 				ramData [27:21] <= seqNum;
 				ramData [0] <= lastEnd [0];
-				w_e_RAM = 1'b1;
+				w_e_RAM <= 1'b1;
 			end
 		endcase
 	end
