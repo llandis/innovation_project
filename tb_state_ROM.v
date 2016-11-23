@@ -62,7 +62,9 @@ end
 
 // Setting up the RAM
 initial begin
-  #100;
+  //reset = 1;
+  //#100;
+  //reset = 0;
   taglist_wr = 1;
   #20 taglist_addr = 6'h00; taglist_data [27:21] = 7'h01; taglist_data [20:11] = 11'h000; taglist_data [10:1] = 10'h005; taglist_data[0] = 1'h0;
   #20 taglist_addr = 6'h01; taglist_data [27:21] = 7'h02; taglist_data [20:11] = 11'h006; taglist_data [10:1] = 10'h00c; taglist_data[0] = 1'h0;
@@ -82,6 +84,9 @@ end
 initial begin
   pb_seq_up = 1'b0;
   pb_seq_dn = 1'b0;
+  reset = 1;
+  #500;
+  reset = 0;
   #2000; // 20 clocks on first sequence - this will give ample time to load the RAM
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
   #1000; // Circulate through first sequence
@@ -103,6 +108,7 @@ initial begin
   #1000; // Circulate through second sequence 
   pb_seq_dn = 1'b1; pb_seq_up = 1'b1; #100 pb_seq_dn = 1'b0; pb_seq_up = 1'b0;// Push both buttons at the same time and watch for smoke
   #1000; // Circulate through first or third sequence sequence 
+  $stop;
 end
   
 endmodule

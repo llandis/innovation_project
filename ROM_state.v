@@ -21,8 +21,19 @@
 `timescale 1ns/1ns
 
 module ROM_state (
-    clock_n,data_in[31:0],pb_seq_up,pb_seq_dn,reset,
-    load,addr[9:0],ram_counter[6:0],at_end_rst,addr_inc,ram_counter_inc,ram_counter_dec);
+    	clock_n,
+	data_in,
+	pb_seq_up,
+	pb_seq_dn,
+	reset,
+    	load,
+	addr,
+	ram_counter,
+	at_end_rst,
+	addr_inc,
+	ram_counter_inc,
+	ram_counter_dec
+);
 
     input clock_n;
     input [31:0] data_in;
@@ -30,26 +41,19 @@ module ROM_state (
 	 input pb_seq_up;
 	 input pb_seq_dn;
 	 input reset;
-	tri0 [31:0] data_in;
+	//tri0 [31:0] data_in;
 	// tri0 at_end;
-	 tri0 pb_seq_up;
-	 tri0 pb_seq_dn;
-	 tri0 reset;
-    output load;
-    output [9:0] addr;
-    output [6:0] ram_counter;
-    output [9:0] at_end_rst;
-    output addr_inc;
-    output ram_counter_inc;
-    output ram_counter_dec;
+	 //tri0 pb_seq_up;
+	 //tri0 pb_seq_dn;
+	 //tri0 reset;
+    output reg load;
+    output reg [9:0] addr;
+    output reg [6:0] ram_counter;
+    output reg [9:0] at_end_rst;
+    output reg addr_inc;
+    output reg ram_counter_inc;
+    output reg ram_counter_dec;
 	reg at_end;
-    reg load;
-    reg [9:0] addr;
-    reg [6:0] ram_counter;
-    reg [9:0] at_end_rst;
-    reg addr_inc;
-    reg ram_counter_inc;
-    reg ram_counter_dec;
     reg [5:0] fstate;
     reg [5:0] reg_fstate;
 	wire [9:0] start_seq;
@@ -70,14 +74,14 @@ module ROM_state (
         end
     end
 	
-	always @(posedge clock_n)
+	always @(posedge clock_n or load)
 	begin
 		if(load == 1'b1) begin
-			if(ram_counter == curr_ram_count)
-				addr = start_seq;
+			if(ram_counter + 1  == curr_ram_count)
+				addr <= start_seq;
 		end
 		
-		if(addr_inc == 1'b1) begin
+		else if(addr_inc == 1'b1) begin
 			addr <= addr + 1;
 		end
 		
@@ -85,17 +89,17 @@ module ROM_state (
 			ram_counter <= ram_counter + 1;
 		end
 		
-		if(ram_counter_dec == 1'b1) begin
+		else if(ram_counter_dec == 1'b1) begin
 			ram_counter <= ram_counter - 1;
 		end
 		
 		if(end_seq == addr)
-			at_end <= (~at_end_rst);
+			at_end <= 1;
 		else if(end_seq != addr)
 			at_end <= 0;
 	end
 
-    always @(fstate or end_seq or at_end or last_ram or pb_seq_up or pb_seq_dn or reset)
+    always @(fstate or end_seq or start_seq or at_end or last_ram or pb_seq_up or pb_seq_dn or reset)
     begin
         if (reset) begin
             reg_fstate <= INIT;
@@ -106,15 +110,16 @@ module ROM_state (
             addr_inc <= 1'b0;
             ram_counter_inc <= 1'b0;
             ram_counter_dec <= 1'b0;
+			//at_end <= 0;
         end
         else begin
-            load <= 1'b0;
-            addr <= 10'b0000000000;
-            ram_counter <= 6'b000000;
-            at_end_rst <= 1'b0;
-            addr_inc <= 1'b0;
-            ram_counter_inc <= 1'b0;
-            ram_counter_dec <= 1'b0;
+            load <= 1'b1;
+            //addr <= 10'b0000000000;
+            //ram_counter <= 6'b000000;
+            //at_end_rst <= 1'b0;
+            //addr_inc <= 1'b0;
+            //ram_counter_inc <= 1'b0;
+            //ram_counter_dec <= 1'b0;
             case (fstate)
                 INIT: begin
                     if ((reset == 1'b0))
@@ -126,11 +131,11 @@ module ROM_state (
                         reg_fstate <= INIT;
 
                     at_end_rst <= 1'b0;
-                    ram_counter <= 6'b000000;
+                    //ram_counter <= 6'b000000;
 
-                    //addr <= start[9:0];
+                    //addr <= start_seq;
 
-                    load <= 1'b0;
+                    //load <= 1'b0;
                 end
                 IN_SEQ: begin
                     if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
@@ -206,8 +211,8 @@ module ROM_state (
                     // Inserting 'else' block to prevent latch inference
                     else
                         reg_fstate <= LAST_SEQ;
-					if(last_ram == 1)
-						ram_counter <= curr_ram_count;
+					//if(last_ram == 1)
+						//ram_counter <= curr_ram_count;
 
                     //addr <= start[9:0];
 
