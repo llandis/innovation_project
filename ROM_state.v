@@ -150,16 +150,18 @@ module ROM_state (
                     load <= 1'b0;
                 end
                 IN_SEQ: begin
-                    if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
+					if ((pb_seq_dn == 1'b1 && start_seq == 10'b00_0000_0000))
+                        //reg_fstate <= LAST_SEQ;
+						reg_fstate <= IN_SEQ;
+					else if ((pb_seq_up == 1'b1 && last_ram == 1'b1))
+                        //reg_fstate <= INIT;
+						reg_fstate <= IN_SEQ;
+                    else if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
                         reg_fstate <= PREV_SEQ;
                     else if ((pb_seq_up == 1'b1 && pb_seq_dn == 1'b0))
                         reg_fstate <= NEXT_SEQ;
-                    else if ((pb_seq_dn == 1'b1 && addr == 10'b00_0000_0000))
-                        reg_fstate <= LAST_SEQ;
                     else if ((at_end == 1'b1))
                         reg_fstate <= BOT_SEQ;
-                    else if ((pb_seq_up == 1'b1 && last_ram == 1'b1))
-                        reg_fstate <= INIT;
                     else if ((at_end == 1'b0))
                         reg_fstate <= IN_SEQ;
                     // Inserting 'else' block to prevent latch inference
@@ -170,6 +172,7 @@ module ROM_state (
                     at_end_rst <= 1'b0;
                     load <= 1'b0;
 					ram_counter_inc <= 1'b0;
+					ram_counter_dec <= 1'b0;
 					delay_done <= 1'b0;
 					delay_i <= 2'b00;
                 end
@@ -213,17 +216,26 @@ module ROM_state (
 					end
                 end
                 PREV_SEQ: begin
-                    if ((pb_seq_dn == 0))
+                    if ((pb_seq_dn == 0 && delay_done == 1'b1))
                         reg_fstate <= IN_SEQ;
+					else if((delay_amt > 0 && delay_done == 1'b0)) begin
+						reg_fstate <= WAIT_SEQ;
+						prev_fstate <= PREV_SEQ;
+					end
                     // Inserting 'else' block to prevent latch inference
                     else
                         reg_fstate <= PREV_SEQ;
 
-                    ram_counter_dec <= 1'b1;
-
+                    //ram_counter_dec <= 1'b1;
+					if(delay_done == 1'b0) begin
+						load <= 1'b1;
+						ram_counter_dec <= 1'b1;
+						addr_inc <= 1'b0;
+						delay_amt <= 2'b10;
+					end
                     //addr <= start[9:0];
 
-                    load <= 1'b1;
+                    //load <= 1'b1;
                 end
                 LAST_SEQ: begin
                     if ((pb_seq_dn == 0 && addr == 10'b00_0000_0000))
@@ -248,6 +260,7 @@ module ROM_state (
 						reg_fstate <= WAIT_SEQ;
 					end
 					ram_counter_inc <= 1'b0;
+					ram_counter_dec <= 1'b0;
 				end
                 default: begin
                     load <= 1'bx;
