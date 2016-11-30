@@ -89,17 +89,33 @@ initial begin
   reset = 0;
   #2000; // 20 clocks on first sequence - this will give ample time to load the RAM
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through first sequence
+  #2000; // Circulate second sequence
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through second sequence
+  #2000; // Circulate through third sequence
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through third sequence
+  #2000; // Circulate through fourth sequence
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through fourth sequence
+  #2000; // Circulate through fifth sequence
+  pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through fourth sequence
+  pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through third sequence
+  pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through second sequence
+  pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through first sequence
+  pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through first sequence again because goes back to IN_SEQ
+  reset = 1;
+  #500;
+  reset = 0;
+  #2000; //Circulate through first sequence again
+  
+  /* pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
+  #2000; // Circulate through fifth sequence
+  
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through fifth sequence
-  pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
-  #1000; // Circulate through first sequence (check if loop works)
+  #2000; // Circulate through first sequence (check if loop works)
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
   #200; // Circulate through second sequence and leave sequence before it goes through all second sequence addresses
   pb_seq_up = 1'b1; #100 pb_seq_up = 1'b0; // Push button 1 cycle pulse
@@ -107,7 +123,7 @@ initial begin
   pb_seq_dn = 1'b1; #100 pb_seq_dn = 1'b0; // Push button down sequence 1 cycle pulse
   #1000; // Circulate through second sequence 
   pb_seq_dn = 1'b1; pb_seq_up = 1'b1; #100 pb_seq_dn = 1'b0; pb_seq_up = 1'b0;// Push both buttons at the same time and watch for smoke
-  #1000; // Circulate through first or third sequence sequence 
+  #1000; // Circulate through first or third sequence sequence  */
   $stop;
 end
   
