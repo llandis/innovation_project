@@ -14,13 +14,13 @@ module KROS (
 	input	[9:0]  address_a_sig,
 	
 	
-   output load,
-   output [9:0] addr,
-   output [6:0] raddress,
-   output [9:0] at_end_rst,
-   output addr_inc,
-   output ram_counter_inc,
-   output ram_counter_dec,
+  	output load,
+   	output [9:0] addr,
+   	output [6:0] raddress,
+   	output [9:0] at_end_rst,
+   	output addr_inc,
+   	output ram_counter_inc,
+  	output ram_counter_dec,
 	output [9:0] LEDR,
 	output [6:0] HEX0,
 	output [6:0] HEX1,
@@ -29,14 +29,14 @@ module KROS (
 	output [6:0] HEX4,
 	output [6:0] HEX5,
 	output [6:0] HEX6,
-	output reg slow_clk,
-	output reg freq_num,
 	output reg q_sig,
 	output [15:0] q_a_sig
 	);
 
 wire [9:0] address_b_sig;
 wire [5:0] seq_num;
+wire [2:0] freq_num;
+wire slow_clk;
 
 
 throttle i_throttle (
@@ -56,17 +56,21 @@ seg_disp i_seq_disp (
 	.HEX3(HEX3), 
 	.HEX4(HEX4), 
 	.HEX5(HEX5), 
-	.HEX6(HEX6)
+	.HEX6(HEX6),
+	.freq_num(freq_num),
+	.seq_num(seq_num),
+	.rom_addr(address_b_sig)
 	);
-//sequencer i_sequencer (
-//	.pb_seq_up(pb_seq_up),
-//	.pb_seq_dn(pb_seq_dn),
-// 	.slow_clk(slow_clk),
-//	.clk_50(CLK_50
-//  	.reset(1'b0),
-//  	.rom_addr(address_b_sig),
-//	.seq_num(seq_num) 
-//  	);
+	
+sequencer i_sequencer (
+	.pb_seq_up(pb_seq_up),
+	.pb_seq_dn(pb_seq_dn),
+ 	.slow_clk(slow_clk),
+	.clk_50(CLK_50),
+  	.reset(1'b0),
+  	.rom_addr(address_b_sig),
+	.seq_num(seq_num) 
+  	);
  
 ROM_state ROM_state (
 	.clock_p(slow_clk),
