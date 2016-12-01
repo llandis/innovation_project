@@ -8,7 +8,19 @@ module KROS (
 	input wire [6:0] wraddress_sig,
 	input wire wren_sig,
 	input wire [6:0] SW,
+	input pb_seq_up,
+	input pb_seq_dn,
+	input reset,
+	input	[9:0]  address_a_sig,
 	
+	
+   output load,
+   output [9:0] addr,
+   output [6:0] raddress,
+   output [9:0] at_end_rst,
+   output addr_inc,
+   output ram_counter_inc,
+   output ram_counter_dec,
 	output [9:0] LEDR,
 	output [6:0] HEX0,
 	output [6:0] HEX1,
@@ -16,9 +28,11 @@ module KROS (
 	output [6:0] HEX3,
 	output [6:0] HEX4,
 	output [6:0] HEX5,
+	output [6:0] HEX6,
 	output reg slow_clk,
 	output reg freq_num,
 	output reg q_sig,
+	output [15:0] q_a_sig
 	);
 
 wire [9:0] address_b_sig;
@@ -35,16 +49,15 @@ throttle i_throttle (
 	);
 
 seg_disp i_seq_disp (  
-	.SW,
-	.HEX0, 
-	.HEX1, 
-	.HEX2, 
-	.HEX3, 
-	.HEX4, 
-	.HEX5, 
-	.HEX6
+	.SW(SW),
+	.HEX0(HEX0), 
+	.HEX1(HEX1), 
+	.HEX2(HEX2), 
+	.HEX3(HEX3), 
+	.HEX4(HEX4), 
+	.HEX5(HEX5), 
+	.HEX6(HEX6)
 	);
-	
 //sequencer i_sequencer (
 //	.pb_seq_up(pb_seq_up),
 //	.pb_seq_dn(pb_seq_dn),
@@ -113,3 +126,6 @@ debouncer i_debouncer_pb3 (
 	 .clk_50 (CLK_50),
 	 .debounced(pb_seq_up)
   	);
+	
+endmodule
+	
