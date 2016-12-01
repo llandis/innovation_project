@@ -7,7 +7,6 @@ module sequencer(
   
   output [9:0] rom_addr,
   output [5:0] seq_num,
-  output load,
 );
   
 wire load;
