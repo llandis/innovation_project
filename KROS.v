@@ -7,6 +7,7 @@ module KROS (
 	input wire [6:0] rdaddress_sig,
 	input wire [6:0] wraddress_sig,
 	input wire wren_sig,
+	input wire [6:0] SW,
 	
 	output [9:0] LEDR,
 	output [6:0] HEX0,
@@ -32,7 +33,18 @@ throttle i_throttle (
   	.slow_clk(slow_clk),
         .freq_num(freq_num) 
 	);
-  
+
+seg_disp i_seq_disp (  
+	.SW,
+	.HEX0, 
+	.HEX1, 
+	.HEX2, 
+	.HEX3, 
+	.HEX4, 
+	.HEX5, 
+	.HEX6
+	);
+	
 //sequencer i_sequencer (
 //	.pb_seq_up(pb_seq_up),
 //	.pb_seq_dn(pb_seq_dn),
