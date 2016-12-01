@@ -6,9 +6,9 @@ module sequencer(
   input reset,
   
   output [9:0] rom_addr,
-  output [5:0] seq_num,
+  output reg [5:0] seq_num
 );
-  
+
 wire load;
 wire [9:0] addr;
 wire at_end_rst;
@@ -21,12 +21,11 @@ wire [6:0] rdaddress;
 wire [1:0] last_two_ROM;
 wire tag_write;
 wire [6:0] seq_num_RAM;
-wire tag_write;
 wire [31:0] ROM_data;
 	
-last_two_ROM [1:0] <= ROM_data [1:0]; 
+assign last_two_ROM [1:0] = ROM_data [1:0]; 
   
-  always (@posedge CLK_50) begin
+  always @(posedge CLK_50) begin
     if (pb_seq_up == 1 & pb_seq_dn == 0)
       seq_num <= seq_num + 1;
     else if (pb_seq_up == 0 & pb_seq_dn == 1)
