@@ -21,7 +21,7 @@
 `timescale 1ns/1ns
 
 module ROM_state (
-    	clock_n,
+    	clock_p,
 	data_in,
 	pb_seq_up,
 	pb_seq_dn,
@@ -35,7 +35,7 @@ module ROM_state (
 	ram_counter_dec
 );
 
-    input clock_n;
+    input clock_p;
     input [31:0] data_in;
 	 //input at_end;
 	 input pb_seq_up;
@@ -73,16 +73,16 @@ module ROM_state (
 	assign end_seq = data_in[10:1];
 	assign last_ram = data_in[0];
 
-    always @(posedge clock_n)
+always @(posedge clock_p)
     begin
-        if (clock_n) begin
+	if (clock_p) begin
             fstate <= reg_fstate;
 			//load_d1 <= load;
 			//load_d2 <= load_d1;
         end
     end
 	
-	always @(posedge clock_n)
+	always @(posedge clock_p)
 	begin
 		if(load == 1'b1) begin
 			if(ram_counter + 1  == curr_ram_count)
