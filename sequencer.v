@@ -17,6 +17,8 @@ wire ram_counter_inc;
 wire ram_counter_dec;
 wire [31:0] RAM_Data_Out;
 wire [6:0] rdaddress;
+wire [1:0] last_two_ROM;
+wire tag_write;
   
   always (@posedge CLK_50) begin
     if (pb_seq_up == 1 & pb_seq_dn == 0)
@@ -29,18 +31,29 @@ wire [6:0] rdaddress;
   
 ROM_state ROM_state_i (
 	.clock_p(slow_clk),
-  .data_in(RAM_Data_Out),
+  	.data_in(RAM_Data_Out),
 	.pb_seq_up(pb_seq_up),
 	.pb_seq_dn(pb_seq_dn),
 	.reset(reset),
 	.load(load),
 	.addr(addr),
-  .ram_counter(rdaddress),
+  	.ram_counter(rdaddress),
 	.at_end_rst(at_end_rst),
 	.addr_inc(addr_inc),
 	.ram_counter_inc(ram_counter_inc),
 	.ram_counter_dec(ram_counter_dec)
 	);
   
+taglist_gen i_taglist_gen(
+	.clk_50MHz(CLK_50),
+	.reset(reset),
+	.lastEnd(last_two_ROM),
+	.ramData(RAM_Data_Out),
+	.seqNum(seq_num),
+	.w_e_RAM(tag_write),
+	.seqWire(rom_addr)
+);
+	
+
 endmodule
 
