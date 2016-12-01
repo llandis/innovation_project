@@ -44,7 +44,8 @@ throttle i_throttle (
 //  	);
  
 ROM_state ROM_state (
-	.clock_p( ),
+	.clock_p(slow_clk),
+	.data_in(q_sig),
 	.pb_seq_up( ),
 	.pb_seq_dn( ),
 	.reset( ),
