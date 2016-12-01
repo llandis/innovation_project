@@ -46,16 +46,16 @@ throttle i_throttle (
 ROM_state ROM_state (
 	.clock_p(slow_clk),
 	.data_in(q_sig),
-	.pb_seq_up( ),
-	.pb_seq_dn( ),
-	.reset( ),
-	.load( ),
-	.addr( ),
-	.ram_counter( ),
-	.at_end_rst( ),
-	.addr_inc( ),
-	.ram_counter_inc( ),
-	.ram_counter_dec( )
+	.pb_seq_up(pb_seq_up),
+	.pb_seq_dn(pb_seq_dn),
+	.reset(reset),
+	.load(load),
+	.addr(addr ),
+	.ram_counter(raddress),
+	.at_end_rst(at_end_rst),
+	.addr_inc(addr_inc),
+	.ram_counter_inc(ram_counter_inc),
+	.ram_counter_dec(ram_counter_dec)
 	);
 
 RAM2Port	RAM2Port_inst (
