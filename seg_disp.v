@@ -5,8 +5,8 @@ module seg_disp
 	output [0:6] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6
 	//output [0:9] LEDR
 	input [2:0] freq_num,
-	input [6:0] seq_num,
-	input [6:0] rom_addr
+	input [5:0] seq_num,
+	input [9:0] rom_addr
 );
 	//turn these into inputs as integrated into the top level module
 	//wire [6:0] seq_num;
