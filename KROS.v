@@ -29,7 +29,6 @@ module KROS (
 	output [6:0] HEX4,
 	output [6:0] HEX5,
 	output [6:0] HEX6,
-	output reg q_sig,
 	output [15:0] q_a_sig
 	);
 
