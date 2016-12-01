@@ -16,9 +16,15 @@ wire addr_inc;
 wire ram_counter_inc;
 wire ram_counter_dec;
 wire [31:0] RAM_Data_Out;
+wire [31:0] RAM_Data_In;
 wire [6:0] rdaddress;
 wire [1:0] last_two_ROM;
 wire tag_write;
+wire [6:0] seq_num_RAM;
+wire tag_write;
+wire [31:0] ROM_data;
+	
+last_two_ROM [1:0] <= ROM_data [1:0]; 
   
   always (@posedge CLK_50) begin
     if (pb_seq_up == 1 & pb_seq_dn == 0)
@@ -48,12 +54,31 @@ taglist_gen i_taglist_gen(
 	.clk_50MHz(CLK_50),
 	.reset(reset),
 	.lastEnd(last_two_ROM),
-	.ramData(RAM_Data_Out),
-	.seqNum(seq_num),
+	.ramData(RAM_Data_In),
+	.seqNum(seq_num_RAM),
 	.w_e_RAM(tag_write),
 	.seqWire(rom_addr)
 );
-	
+
+RAM2Port RAM2Port_inst (
+	.data (RAM_Data_In),
+        .rdaddress (rdaddress),
+        .rdclock ( slow_clk ),
+	.wraddress (seq_num_RAM),
+	.wrclock (CLK_50),
+	.wren (tag_write),
+	.q (RAM_Data_Out)
+	);
+  
+  
+ROM2Port ROM2Port_inst (
+	.address_a (rom_addr),
+	.address_b (),
+	.inclock (CLK_50),
+	.outclock (slow_clk),
+	.q_a (ROM_data),
+	.q_b ()
+	);
 
 endmodule
 
