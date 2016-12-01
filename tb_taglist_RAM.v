@@ -19,7 +19,7 @@ wire [31:0] data_out;
 
 
 taglist_gen i_taglist_gen(
-	.clk_1KHz(fast_clk),
+	.clk_50MHz(fast_clk),
 	.reset(reset),
 	.lastEnd(data_in),
 	.ramData(data_out),
@@ -53,9 +53,33 @@ initial begin
   forever #10 fast_clk = ~fast_clk;
 end
 
-always @ (posedge fast_clk)
+/* always @ (posedge fast_clk)
 begin
 	data_in[1:0]= romData [1:0];
+end */
+
+// x and z values are NOT treated as don't-care's
+always @ (romAddr) begin
+	case(romAddr)
+	7'h00: data_in = 2'b00;
+	7'h01: data_in = 2'b00;
+	7'h02: data_in = 2'b00;
+	7'h03: data_in = 2'b00;
+	7'h04: data_in = 2'b00;
+	7'h05: data_in = 2'b10;
+	7'h06: data_in = 2'b00;
+	7'h07: data_in = 2'b00;
+	7'h08: data_in = 2'b00;
+	7'h09: data_in = 2'b10;
+	7'h0a: data_in = 2'b00;
+	7'h0b: data_in = 2'b00;
+	7'h0c: data_in = 2'b10;
+	7'h0d: data_in = 2'b00;
+	7'h0e: data_in = 2'b00;
+	7'h0f: data_in = 2'b00;
+	7'h10: data_in = 2'b00;
+	7'h11: data_in = 2'b11;
+	endcase
 end
 
 // Setting up the RAM
@@ -83,7 +107,7 @@ initial begin
   
   reset = 1'b1;
   #100 reset = 1'b0;
-  #1000;
+  #5000;
   rd_addr_from_harry = 7'h00;
   #100   rd_addr_from_harry = 7'h00;
   #100   rd_addr_from_harry = 7'h01;
