@@ -84,7 +84,7 @@ always @(posedge clock_p)
 	
 	always @(posedge clock_p)
 	begin
-		if(load == 1'b1 && addr_inc == 1'b0) begin
+		if(load == 1'b1) begin
 			if(ram_counter + 1  == curr_ram_count)
 				addr <= start_seq;
 		end
@@ -113,8 +113,8 @@ always @(posedge clock_p)
             reg_fstate <= INIT;
 			prev_fstate <= INIT;
             load <= 1'b1;
-            //addr <= 10'b0000000000;
-            //ram_counter <= 6'b000000;
+            addr <= 10'b0000000000;
+            ram_counter <= 6'b000000;
             at_end_rst <= 1'b0;
             addr_inc <= 1'b0;
             ram_counter_inc <= 1'b0;

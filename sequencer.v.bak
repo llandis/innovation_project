@@ -6,14 +6,11 @@ module sequencer(
   input reset,
   
   output [9:0] rom_addr,
-  output reg [5:0] seq_num,
-  output [9:0] LEDR
+  output reg [5:0] seq_num
 );
 
 wire load;
 wire [9:0] addr;
-wire [9:0] addr_from_rom_state;
-wire [15:0] ROM_to_LED;
 wire at_end_rst;
 wire addr_inc;
 wire ram_counter_inc;
@@ -24,16 +21,12 @@ wire [6:0] rdaddress;
 wire [1:0] last_two_ROM;
 wire tag_write;
 wire [6:0] seq_num_RAM;
-wire [15:0] ROM_data;
-
-assign rom_addr = addr;	
+wire [31:0] ROM_data;
+	
 assign last_two_ROM [1:0] = ROM_data [1:0]; 
-assign LEDR = ROM_to_LED[15:6];
   
   always @(posedge CLK_50) begin
-	 if (reset)
-		seq_num <= 6'b00_0000;
-    else if (pb_seq_up == 1 & pb_seq_dn == 0)
+    if (pb_seq_up == 1 & pb_seq_dn == 0)
       seq_num <= seq_num + 1;
     else if (pb_seq_up == 0 & pb_seq_dn == 1)
       seq_num <= seq_num - 1;
@@ -48,7 +41,7 @@ ROM_state ROM_state_i (
 	.pb_seq_dn(pb_seq_dn),
 	.reset(reset),
 	.load(load),
-	.addr(addr_from_rom_state),
+	.addr(addr),
   	.ram_counter(rdaddress),
 	.at_end_rst(at_end_rst),
 	.addr_inc(addr_inc),
@@ -63,13 +56,13 @@ taglist_gen i_taglist_gen(
 	.ramData(RAM_Data_In),
 	.seqNum(seq_num_RAM),
 	.w_e_RAM(tag_write),
-	.seqWire(addr)
+	.seqWire(rom_addr)
 );
 
 RAM2Port RAM2Port_inst (
 	.data (RAM_Data_In),
-   .rdaddress (rdaddress),
-   .rdclock ( slow_clk ),
+        .rdaddress (rdaddress),
+        .rdclock ( slow_clk ),
 	.wraddress (seq_num_RAM),
 	.wrclock (CLK_50),
 	.wren (tag_write),
@@ -78,12 +71,12 @@ RAM2Port RAM2Port_inst (
   
   
 ROM2Port ROM2Port_inst (
-	.address_a (addr),
-	.address_b (addr_from_rom_state),
+	.address_a (rom_addr),
+	.address_b (),
 	.inclock (CLK_50),
 	.outclock (slow_clk),
 	.q_a (ROM_data),
-	.q_b (ROM_to_LED)
+	.q_b ()
 	);
 
 endmodule

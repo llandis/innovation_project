@@ -14,7 +14,6 @@ wire dbDN;
 
 reg [2:0] MUX_SEL;
 
-//parameter COUNT_SIZE= 6, COUNT_SIZE1 = 5, COUNT_SIZE2 = 4, COUNT_SIZE3 = 3, COUNT_SIZE4 = 2, COUNT_SIZE5 = 1;
 parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
 
 
@@ -74,17 +73,17 @@ reg db_8cycle_d1;
 reg [7:0] reg1;
 
 //reg: wait for stable
-  always @ (posedge clk_50 or posedge reset) 
+  always @ (posedge clk_50 or reset) 
 begin
 	reg1[7:0] <= {reg1[6:0],noisy}; //shift register
-		if (reset) reg1 <= 8'b0000_0000;
+		if (reset) reg1 = 8'b0000_0000;
 		else if (reg1[7:0] == 8'b00000000)
 			db_8cycle <= 1'b0;
 		else if (reg1[7:0] == 8'b11111111)
 			db_8cycle <= 1'b1;
 		else db_8cycle <= db_8cycle;
 		
-		db_8cycle_d1 <= db_8cycle;
+		db_8cycle_d1 = db_8cycle;
 		
 end
 
@@ -101,11 +100,11 @@ module clk_div (
 	output  reg [25:0] count
 	);
 	
-	//parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
+	parameter COUNT_SIZE= 26, COUNT_SIZE1 = 25, COUNT_SIZE2 = 24, COUNT_SIZE3 = 23, COUNT_SIZE4 = 22, COUNT_SIZE5 = 21;
 
 
 	parameter MAX_COUNT = ((2 * 50000000) -1); 
-	//parameter MAX_COUNT = 63; 
+	
 	
 	always @(posedge clk or posedge reset)
 	begin 

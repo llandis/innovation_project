@@ -1,10 +1,10 @@
 module bcd_conv
 (
-	input [9:0] x,
+	input [6:0] x,
 	output reg [0:6] seg0, seg1, seg2
 );
 	
-	reg [9:0] x_temp;
+	reg [6:0] x_temp;
 	
 	//012_3456 (segments are active-low)
 	parameter ZERO = 7'b000_0001;
