@@ -10,9 +10,13 @@ module seg_disp
 	wire [9:0] freq_num_pass;
 	wire [9:0] rom_addr_pass;
 	wire [0:6] temp0, temp1, temp2;
+	//assign seq_num_pass = 10'b00_0000_0000;
+	//assign freq_num_pass = 10'b00_0000_0000;
+	//assign rom_addr_pass = 10'b00_0000_0000;
 	
-	assign freq_num_pass [2:0] = freq_num;
-	assign seq_num_pass [5:0] = seq_num;
+	assign freq_num_pass = {7'b000_0000,freq_num}; 
+	//assign freq_num_pass = 10'b00_0000_0101;
+	assign seq_num_pass = {4'b0000,seq_num};
 	assign rom_addr_pass = rom_addr;
 	
 	bcd_conv seq(seq_num_pass, HEX0, HEX1, temp0);

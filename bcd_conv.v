@@ -7,16 +7,19 @@ module bcd_conv
 	reg [9:0] x_temp;
 	
 	//012_3456 (segments are active-low)
-	parameter ZERO = 7'b000_0001;
-	parameter ONE = 7'b100_1111;
-	parameter TWO = 7'b001_0010;
-	parameter THREE = 7'b000_0110;
-	parameter FOUR = 7'b100_1100;
-	parameter FIVE = 7'b010_0100;
-	parameter SIX = 7'b010_0000;
-	parameter SEVEN = 7'b000_1111;
+	parameter ZERO = 7'b100_0000;
+	//parameter ONE = 7'b100_1111;
+	parameter ONE = 7'b111_1001;
+	//parameter TWO = 7'b001_0010;
+	parameter TWO = 7'b010_0100;
+	parameter THREE = 7'b011_0000;
+	parameter FOUR = 7'b001_1001;
+	//parameter FIVE = 7'b010_0100;
+	parameter FIVE = 7'b001_0010;
+	parameter SIX = 7'b000_0010;
+	parameter SEVEN = 7'b111_1000;
 	parameter EIGHT = 7'b000_0000;
-	parameter NINE = 7'b000_1100;
+	parameter NINE = 7'b001_1000;
 
 	always @(x)
 	if(x < 10) begin

@@ -150,15 +150,15 @@ always @(posedge clock_p)
                     load <= 1'b0;
                 end
                 IN_SEQ: begin
-					if ((pb_seq_dn == 1'b1 && start_seq == 10'b00_0000_0000))
+					if ((pb_seq_dn == 1'b0 && start_seq == 10'b00_0000_0000))
                         //reg_fstate <= LAST_SEQ;
 						reg_fstate <= IN_SEQ;
-					else if ((pb_seq_up == 1'b1 && last_ram == 1'b1))
+					else if ((pb_seq_up == 1'b0 && last_ram == 1'b1))
                         //reg_fstate <= INIT;
 						reg_fstate <= IN_SEQ;
-                    else if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
+                    else if ((pb_seq_dn == 1'b0 && pb_seq_up == 1'b1))
                         reg_fstate <= PREV_SEQ;
-                    else if ((pb_seq_up == 1'b1 && pb_seq_dn == 1'b0))
+                    else if ((pb_seq_up == 1'b0 && pb_seq_dn == 1'b1))
                         reg_fstate <= NEXT_SEQ;
                     else if ((at_end == 1'b1))
                         reg_fstate <= BOT_SEQ;
@@ -179,13 +179,13 @@ always @(posedge clock_p)
                 BOT_SEQ: begin
                     if ((at_end == 1'b0))
                         reg_fstate <= IN_SEQ;
-                    else if ((pb_seq_up == 1'b1 && pb_seq_dn == 1'b0))
+                    else if ((pb_seq_up == 1'b0 && pb_seq_dn == 1'b1))
                         reg_fstate <= NEXT_SEQ;
-                    else if ((pb_seq_dn == 1'b1 && pb_seq_up == 1'b0))
+                    else if ((pb_seq_dn == 1'b0 && pb_seq_up == 1'b1))
                         reg_fstate <= PREV_SEQ;
-                    else if ((pb_seq_dn == 1'b1 && addr == 10'b00_0000_0000))
+                    else if ((pb_seq_dn == 1'b0 && addr == 10'b00_0000_0000))
                         reg_fstate <= LAST_SEQ;
-                    else if ((pb_seq_up == 1'b1 && last_ram == 1'b1))
+                    else if ((pb_seq_up == 1'b0 && last_ram == 1'b1))
                         reg_fstate <= INIT;
                     // Inserting 'else' block to prevent latch inference
                     else
@@ -197,7 +197,7 @@ always @(posedge clock_p)
                     load <= 1'b1;
                 end
                 NEXT_SEQ: begin
-                    if ((pb_seq_up == 0 && delay_done == 1'b1))
+                    if ((pb_seq_up == 1 && delay_done == 1'b1))
                         reg_fstate <= IN_SEQ;
 					else if((delay_amt > 0 && delay_done == 1'b0)) begin
 						reg_fstate <= WAIT_SEQ;
@@ -216,7 +216,7 @@ always @(posedge clock_p)
 					end
                 end
                 PREV_SEQ: begin
-                    if ((pb_seq_dn == 0 && delay_done == 1'b1))
+                    if ((pb_seq_dn == 1 && delay_done == 1'b1))
                         reg_fstate <= IN_SEQ;
 					else if((delay_amt > 0 && delay_done == 1'b0)) begin
 						reg_fstate <= WAIT_SEQ;
@@ -238,7 +238,7 @@ always @(posedge clock_p)
                     //load <= 1'b1;
                 end
                 LAST_SEQ: begin
-                    if ((pb_seq_dn == 0 && addr == 10'b00_0000_0000))
+                    if ((pb_seq_dn == 1 && addr == 10'b00_0000_0000))
                         reg_fstate <= IN_SEQ;
                     // Inserting 'else' block to prevent latch inference
                     else

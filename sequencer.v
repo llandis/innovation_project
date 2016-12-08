@@ -29,17 +29,19 @@ wire [15:0] ROM_data;
 assign rom_addr = addr;	
 assign last_two_ROM [1:0] = ROM_data [1:0]; 
 assign LEDR = ROM_to_LED[15:6];
-  
+
   always @(posedge CLK_50) begin
 	 if (reset)
 		seq_num <= 6'b00_0000;
-    else if (pb_seq_up == 1 & pb_seq_dn == 0)
-      seq_num <= seq_num + 1;
     else if (pb_seq_up == 0 & pb_seq_dn == 1)
+      seq_num <= seq_num + 1;
+    else if (pb_seq_up == 1 & pb_seq_dn == 0)
       seq_num <= seq_num - 1;
-    else if (pb_seq_up == 0 & pb_seq_dn ==0)
+    else if (pb_seq_up == 1 & pb_seq_dn ==1)
       seq_num <= seq_num;
   end
+  
+  
   
 ROM_state ROM_state_i (
 	.clock_p(slow_clk),
@@ -87,4 +89,3 @@ ROM2Port ROM2Port_inst (
 	);
 
 endmodule
-

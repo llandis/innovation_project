@@ -55,6 +55,7 @@ initial begin
   #1000; // Hold for 50 cycles
   pb_seq_up = 1'b1;
   #128000; //around 100 slow clock cycles
+  $stop;
 
 end
 

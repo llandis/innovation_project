@@ -5,7 +5,7 @@ input pb_freq_up,
 input pb_freq_dn,
   
 output reg slow_clk,
-output freq_num
+output [2:0] freq_num
 );
 	
 
@@ -28,13 +28,13 @@ always @(posedge CLK_50 or posedge reset)
 begin
 	if (reset == 1)
 		MUX_SEL = 0; 
-	else if ((MUX_SEL == 3'b000 && dbDN == 1 && dbUP == 0) || (MUX_SEL == 3'd5 && dbDN == 0 && dbUP ==1))
+	else if ((MUX_SEL == 3'b000 && dbDN == 0 && dbUP == 1) || (MUX_SEL == 3'd5 && dbDN == 1 && dbUP == 0))
 		MUX_SEL = MUX_SEL;
 	else 
 		begin
-		if (dbUP == 1 && dbDN == 0)
+		if (dbUP == 0 && dbDN == 1)
      		MUX_SEL = MUX_SEL + 3'b001;
-		else if (dbUP ==0 && dbDN == 1)
+		else if (dbUP == 1 && dbDN == 0)
 		 	MUX_SEL = MUX_SEL - 3'b001;
 		end
 		
@@ -92,7 +92,7 @@ assign debounced = db_8cycle & ~db_8cycle_d1;
 
 
 
-endmodule
+endmodule 
 
 module clk_div (
  
