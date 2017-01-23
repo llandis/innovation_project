@@ -82,9 +82,25 @@ always @(posedge clock_p)
         end
     end
 	
-	always @(posedge clock_p)
+	always @(posedge clock_p or posedge reset)
 	begin
-		if(load == 1'b1 && addr_inc == 1'b0) begin
+		if (reset) begin
+            reg_fstate <= INIT;
+			prev_fstate <= INIT;
+            load <= 1'b1;
+            addr <= 10'b0000000000;
+            ram_counter <= 6'b000000;
+            at_end_rst <= 1'b0;
+            addr_inc <= 1'b0;
+            ram_counter_inc <= 1'b0;
+            ram_counter_dec <= 1'b0;
+			delay_done <= 1'b0;
+			delay_amt <= 2'b00;
+			delay_i <= 2'b00;
+			//at_end <= 0;
+        end
+		
+		else if(load == 1'b1 && addr_inc == 1'b0) begin
 			if(ram_counter + 1  == curr_ram_count)
 				addr <= start_seq;
 		end
@@ -109,22 +125,6 @@ always @(posedge clock_p)
 
     always @(fstate or end_seq or start_seq or at_end or last_ram or pb_seq_up or pb_seq_dn or reset or delay_i or prev_fstate or addr)
     begin
-        if (reset) begin
-            reg_fstate <= INIT;
-			prev_fstate <= INIT;
-            load <= 1'b1;
-            //addr <= 10'b0000000000;
-            //ram_counter <= 6'b000000;
-            at_end_rst <= 1'b0;
-            addr_inc <= 1'b0;
-            ram_counter_inc <= 1'b0;
-            ram_counter_dec <= 1'b0;
-			delay_done <= 1'b0;
-			delay_amt <= 2'b00;
-			delay_i <= 2'b00;
-			//at_end <= 0;
-        end
-        else begin
             //load <= 1'b0;
             //addr <= 10'b0000000000;
             //ram_counter <= 6'b000000;
@@ -273,6 +273,5 @@ always @(posedge clock_p)
                     $display ("Reach undefined state");
                 end
             endcase
-        end
     end
 endmodule // ROM_state
