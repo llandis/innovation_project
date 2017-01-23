@@ -113,8 +113,8 @@ always @(posedge clock_p)
             reg_fstate <= INIT;
 			prev_fstate <= INIT;
             load <= 1'b1;
-            //addr <= 10'b0000000000;
-            //ram_counter <= 6'b000000;
+            addr <= 10'b0000000000;
+            ram_counter <= 7'b000_0000;
             at_end_rst <= 1'b0;
             addr_inc <= 1'b0;
             ram_counter_inc <= 1'b0;

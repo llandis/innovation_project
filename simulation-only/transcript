@@ -1,0 +1,1330 @@
+# do state_machine_do.do
+# if {[file exists work]} {
+# 	vdel -lib work -all
+# }
+# vlib work
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:52 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v 
+# -- Compiling module KROS_simonly
+# 
+# Top level modules:
+# 	KROS_simonly
+# End time: 13:46:52 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:52 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v 
+# -- Compiling module tb_kros
+# 
+# Top level modules:
+# 	tb_kros
+# End time: 13:46:52 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:52 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v 
+# -- Compiling module sequencer
+# 
+# Top level modules:
+# 	sequencer
+# End time: 13:46:52 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:52 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v 
+# -- Compiling module bcd_conv
+# 
+# Top level modules:
+# 	bcd_conv
+# End time: 13:46:52 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:52 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v 
+# -- Compiling module ROM2Port
+# 
+# Top level modules:
+# 	ROM2Port
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v 
+# -- Compiling module RAM2Port
+# 
+# Top level modules:
+# 	RAM2Port
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v 
+# -- Compiling module seg_disp
+# 
+# Top level modules:
+# 	seg_disp
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v 
+# -- Compiling module throttle
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	throttle
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v 
+# -- Compiling module taglist_gen
+# ** Warning: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v(45): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	taglist_gen
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v 
+# -- Compiling module ROM_state
+# 
+# Top level modules:
+# 	ROM_state
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:53 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v 
+# -- Compiling module PushButton_Debouncer
+# 
+# Top level modules:
+# 	PushButton_Debouncer
+# End time: 13:46:53 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_kros
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs=""+acc"" tb_kros 
+# Start time: 13:46:53 on Jan 19,2017
+# //  ModelSim - Intel FPGA Edition 10.5b Oct  5 2016Linux 2.6.32-642.6.2.el6.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_kros
+# Loading work.KROS_simonly
+# Loading work.throttle
+# Loading work.PushButton_Debouncer
+# Loading work.clk_div
+# Loading work.seg_disp
+# Loading work.bcd_conv
+# Loading work.sequencer
+# Loading work.ROM_state
+# Loading work.taglist_gen
+# Loading work.RAM2Port
+# Loading altera_mf_ver.altsyncram
+# Loading work.ROM2Port
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Missing connection for port 'slow_clk'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce2 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce0 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3015) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(66): [PCDPC] - Port size (10) does not match connection size (1) for port 'at_end_rst'. The port definition is at: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/ROM_state_i File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v
+# 
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# do wavehh.do
+# onerror {resume}
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27:21]} seq_num
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20:11]} start_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10:1]} end_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]  } last
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /tb_kros/CLK_50
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/slow_clk
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/LEDR
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX0
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX1
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX2
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX3
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX4
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX5
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/seq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/freq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/rom_addr_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_throttle/freq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/rom_addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/next_seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounce0/clk
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_state
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_down
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_cnt
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/last
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/RAM2Port_inst/data
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wraddress
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wren
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/i_taglist_gen/RAMstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/clock_p
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/data_in
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/load
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/fstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/curr_ram_count
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/ram_counter
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_dn
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {987398642 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 363
+# configure wave -valuecolwidth 50
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {987398642 ps} {991306994 ps}
+# run -all
+# ** Note: $stop    : /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v(66)
+#    Time: 1004400 ns  Iteration: 0  Instance: /tb_kros
+# Break in Module tb_kros at /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v line 66
+do state_machine_do.do
+# if {[file exists work]} {
+# 	vdel -lib work -all
+# }
+# Error 133: Unable to remove directory "/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/work".
+# vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v 
+# -- Compiling module KROS_simonly
+# 
+# Top level modules:
+# 	KROS_simonly
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v 
+# -- Compiling module tb_kros
+# 
+# Top level modules:
+# 	tb_kros
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v 
+# -- Compiling module sequencer
+# 
+# Top level modules:
+# 	sequencer
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v 
+# -- Compiling module bcd_conv
+# 
+# Top level modules:
+# 	bcd_conv
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v 
+# -- Compiling module ROM2Port
+# 
+# Top level modules:
+# 	ROM2Port
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v 
+# -- Compiling module RAM2Port
+# 
+# Top level modules:
+# 	RAM2Port
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v 
+# -- Compiling module seg_disp
+# 
+# Top level modules:
+# 	seg_disp
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v 
+# -- Compiling module throttle
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	throttle
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v 
+# -- Compiling module taglist_gen
+# ** Warning: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v(45): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	taglist_gen
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v 
+# -- Compiling module ROM_state
+# 
+# Top level modules:
+# 	ROM_state
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:17:56 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v 
+# -- Compiling module PushButton_Debouncer
+# 
+# Top level modules:
+# 	PushButton_Debouncer
+# End time: 14:17:56 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_kros
+# End time: 14:17:58 on Jan 19,2017, Elapsed time: 0:31:05
+# Errors: 0, Warnings: 12
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs=""+acc"" tb_kros 
+# Start time: 14:17:58 on Jan 19,2017
+# Loading work.tb_kros
+# Loading work.KROS_simonly
+# Loading work.throttle
+# Loading work.PushButton_Debouncer
+# Loading work.clk_div
+# Loading work.seg_disp
+# Loading work.bcd_conv
+# Loading work.sequencer
+# Loading work.ROM_state
+# Loading work.taglist_gen
+# Loading work.RAM2Port
+# Loading altera_mf_ver.altsyncram
+# Loading work.ROM2Port
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Missing connection for port 'slow_clk'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce2 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce0 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3015) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(66): [PCDPC] - Port size (10) does not match connection size (1) for port 'at_end_rst'. The port definition is at: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/ROM_state_i File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v
+# 
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# do wavehh.do
+# onerror {resume}
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27:21]} seq_num
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20:11]} start_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10:1]} end_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]  } last
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /tb_kros/CLK_50
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/slow_clk
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/LEDR
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX0
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX1
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX2
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX3
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX4
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX5
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/seq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/freq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/rom_addr_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_throttle/freq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/rom_addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/next_seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounce0/clk
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_state
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_down
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_cnt
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/last
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/RAM2Port_inst/data
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wraddress
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wren
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/i_taglist_gen/RAMstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/clock_p
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/data_in
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/load
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/fstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/curr_ram_count
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/ram_counter
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_dn
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {987398642 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 363
+# configure wave -valuecolwidth 50
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {987398642 ps} {991306994 ps}
+# run -all
+# Reach undefined state
+# Reach undefined state
+# ** Note: $stop    : /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v(66)
+#    Time: 1004400 ns  Iteration: 0  Instance: /tb_kros
+# Break in Module tb_kros at /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v line 66
+# WARNING: No extended dataflow license exists
+do state_machine_do.do
+# if {[file exists work]} {
+# 	vdel -lib work -all
+# }
+# Error 133: Unable to remove directory "/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/work".
+# vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v 
+# -- Compiling module KROS_simonly
+# 
+# Top level modules:
+# 	KROS_simonly
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v 
+# -- Compiling module tb_kros
+# 
+# Top level modules:
+# 	tb_kros
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v 
+# -- Compiling module sequencer
+# 
+# Top level modules:
+# 	sequencer
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v 
+# -- Compiling module bcd_conv
+# 
+# Top level modules:
+# 	bcd_conv
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v 
+# -- Compiling module ROM2Port
+# 
+# Top level modules:
+# 	ROM2Port
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v 
+# -- Compiling module RAM2Port
+# 
+# Top level modules:
+# 	RAM2Port
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v 
+# -- Compiling module seg_disp
+# 
+# Top level modules:
+# 	seg_disp
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v 
+# -- Compiling module throttle
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	throttle
+# End time: 14:29:13 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:13 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v 
+# -- Compiling module taglist_gen
+# ** Warning: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v(45): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	taglist_gen
+# End time: 14:29:14 on Jan 19,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:14 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v 
+# -- Compiling module ROM_state
+# 
+# Top level modules:
+# 	ROM_state
+# End time: 14:29:14 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:29:14 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v 
+# -- Compiling module PushButton_Debouncer
+# 
+# Top level modules:
+# 	PushButton_Debouncer
+# End time: 14:29:14 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_kros
+# End time: 14:29:15 on Jan 19,2017, Elapsed time: 0:11:17
+# Errors: 0, Warnings: 13
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs=""+acc"" tb_kros 
+# Start time: 14:29:15 on Jan 19,2017
+# Loading work.tb_kros
+# Loading work.KROS_simonly
+# Loading work.throttle
+# Loading work.PushButton_Debouncer
+# Loading work.clk_div
+# Loading work.seg_disp
+# Loading work.bcd_conv
+# Loading work.sequencer
+# Loading work.ROM_state
+# Loading work.taglist_gen
+# Loading work.RAM2Port
+# Loading altera_mf_ver.altsyncram
+# Loading work.ROM2Port
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Missing connection for port 'slow_clk'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce2 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce0 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3015) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(66): [PCDPC] - Port size (10) does not match connection size (1) for port 'at_end_rst'. The port definition is at: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/ROM_state_i File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v
+# WARNING: No extended dataflow license exists
+# 
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# do wavehh.do
+# onerror {resume}
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27:21]} seq_num
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20:11]} start_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10:1]} end_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]  } last
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /tb_kros/CLK_50
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/slow_clk
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/LEDR
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX0
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX1
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX2
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX3
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX4
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX5
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/seq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/freq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/rom_addr_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_throttle/freq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/rom_addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/next_seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounce0/clk
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_state
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_down
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_cnt
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/last
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/RAM2Port_inst/data
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wraddress
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wren
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/i_taglist_gen/RAMstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/clock_p
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/data_in
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/load
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/fstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/curr_ram_count
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/ram_counter
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_dn
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {987398642 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 363
+# configure wave -valuecolwidth 50
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {987398642 ps} {991306994 ps}
+# run -all
+# Reach undefined state
+# Reach undefined state
+# ** Note: $stop    : /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v(66)
+#    Time: 1004400 ns  Iteration: 0  Instance: /tb_kros
+# Break in Module tb_kros at /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v line 66
+do state_machine_do.do
+# if {[file exists work]} {
+# 	vdel -lib work -all
+# }
+# vlib work
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v 
+# -- Compiling module KROS_simonly
+# 
+# Top level modules:
+# 	KROS_simonly
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v 
+# -- Compiling module tb_kros
+# 
+# Top level modules:
+# 	tb_kros
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v 
+# -- Compiling module sequencer
+# 
+# Top level modules:
+# 	sequencer
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v 
+# -- Compiling module bcd_conv
+# 
+# Top level modules:
+# 	bcd_conv
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v 
+# -- Compiling module ROM2Port
+# 
+# Top level modules:
+# 	ROM2Port
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v 
+# -- Compiling module RAM2Port
+# 
+# Top level modules:
+# 	RAM2Port
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v 
+# -- Compiling module seg_disp
+# 
+# Top level modules:
+# 	seg_disp
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v 
+# -- Compiling module throttle
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	throttle
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v 
+# -- Compiling module taglist_gen
+# ** Warning: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v(45): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	taglist_gen
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v 
+# -- Compiling module ROM_state
+# 
+# Top level modules:
+# 	ROM_state
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:31:30 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v 
+# -- Compiling module PushButton_Debouncer
+# 
+# Top level modules:
+# 	PushButton_Debouncer
+# End time: 14:31:30 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_kros
+# End time: 14:31:34 on Jan 19,2017, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 13
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs=""+acc"" tb_kros 
+# Start time: 14:31:34 on Jan 19,2017
+# Loading work.tb_kros
+# Loading work.KROS_simonly
+# Loading work.throttle
+# Loading work.PushButton_Debouncer
+# Loading work.clk_div
+# Loading work.seg_disp
+# Loading work.bcd_conv
+# Loading work.sequencer
+# Loading work.ROM_state
+# Loading work.taglist_gen
+# Loading work.RAM2Port
+# Loading altera_mf_ver.altsyncram
+# Loading work.ROM2Port
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Missing connection for port 'slow_clk'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce2 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce0 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3015) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(66): [PCDPC] - Port size (10) does not match connection size (1) for port 'at_end_rst'. The port definition is at: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/ROM_state_i File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v
+# WARNING: No extended dataflow license exists
+# 
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# do wavehh.do
+# onerror {resume}
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27:21]} seq_num
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20:11]} start_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10:1]} end_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]  } last
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /tb_kros/CLK_50
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/slow_clk
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/LEDR
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX0
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX1
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX2
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX3
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX4
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX5
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/seq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/freq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/rom_addr_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_throttle/freq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/rom_addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/next_seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounce0/clk
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_state
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_down
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_cnt
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/last
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/RAM2Port_inst/data
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wraddress
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wren
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/i_taglist_gen/RAMstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/clock_p
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/data_in
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/load
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/fstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/curr_ram_count
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/ram_counter
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_dn
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {987398642 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 363
+# configure wave -valuecolwidth 50
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {987398642 ps} {991306994 ps}
+# run -all
+# ** Note: $stop    : /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v(66)
+#    Time: 1004400 ns  Iteration: 0  Instance: /tb_kros
+# Break in Module tb_kros at /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v line 66
+add wave -position 38  sim:/tb_kros/DUT/i_sequencer/RAM2Port_inst/rdaddress
+add wave -position 39  sim:/tb_kros/DUT/i_sequencer/RAM2Port_inst/q
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/wavehh.do
+do state_machine_do.do
+# if {[file exists work]} {
+# 	vdel -lib work -all
+# }
+# Error 133: Unable to remove directory "/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/work".
+# vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# File exists. (errno = EEXIST)
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v 
+# -- Compiling module KROS_simonly
+# 
+# Top level modules:
+# 	KROS_simonly
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v 
+# -- Compiling module tb_kros
+# 
+# Top level modules:
+# 	tb_kros
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v 
+# -- Compiling module sequencer
+# 
+# Top level modules:
+# 	sequencer
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/bcd_conv.v 
+# -- Compiling module bcd_conv
+# 
+# Top level modules:
+# 	bcd_conv
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM2Port.v 
+# -- Compiling module ROM2Port
+# 
+# Top level modules:
+# 	ROM2Port
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/RAM2Port.v 
+# -- Compiling module RAM2Port
+# 
+# Top level modules:
+# 	RAM2Port
+# End time: 14:42:48 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:48 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/seg_disp.v 
+# -- Compiling module seg_disp
+# 
+# Top level modules:
+# 	seg_disp
+# End time: 14:42:49 on Jan 19,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:49 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v 
+# -- Compiling module throttle
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	throttle
+# End time: 14:42:49 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:49 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v 
+# -- Compiling module taglist_gen
+# ** Warning: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/stateMachine_taglistRAM.v(45): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	taglist_gen
+# End time: 14:42:49 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:49 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v 
+# -- Compiling module ROM_state
+# 
+# Top level modules:
+# 	ROM_state
+# End time: 14:42:49 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master {/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:49 on Jan 19,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master" /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v 
+# -- Compiling module PushButton_Debouncer
+# 
+# Top level modules:
+# 	PushButton_Debouncer
+# End time: 14:42:49 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs="+acc"  tb_kros
+# End time: 14:42:50 on Jan 19,2017, Elapsed time: 0:11:16
+# Errors: 0, Warnings: 13
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L work -L work -voptargs=""+acc"" tb_kros 
+# Start time: 14:42:50 on Jan 19,2017
+# Loading work.tb_kros
+# Loading work.KROS_simonly
+# Loading work.throttle
+# Loading work.PushButton_Debouncer
+# Loading work.clk_div
+# Loading work.seg_disp
+# Loading work.bcd_conv
+# Loading work.sequencer
+# Loading work.ROM_state
+# Loading work.taglist_gen
+# Loading work.RAM2Port
+# Loading altera_mf_ver.altsyncram
+# Loading work.ROM2Port
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/KROS_simonly.v(24): [TFMPC] - Missing connection for port 'slow_clk'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(22): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_throttle/debounce2 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/throttle.v(23): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce0 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(39): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3017) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/debounce1 File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/PushButton_Debouncer.v
+# ** Warning: (vsim-3722) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(40): [TFMPC] - Missing connection for port 'PB_up'.
+# ** Warning: (vsim-3015) /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/sequencer.v(66): [PCDPC] - Port size (10) does not match connection size (1) for port 'at_end_rst'. The port definition is at: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_kros/DUT/i_sequencer/ROM_state_i File: /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/ROM_state.v
+# WARNING: No extended dataflow license exists
+# 
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# do wavehh.do
+# onerror {resume}
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27:21]} seq_num
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20:11]} start_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst { /tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10:1]} end_seq
+# quietly virtual signal -install /tb_kros/DUT/i_sequencer/RAM2Port_inst {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]  } last
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -radix hexadecimal /tb_kros/CLK_50
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/slow_clk
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_freq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_up
+# add wave -noupdate -radix hexadecimal /tb_kros/pb_seq_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/LEDR
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX0
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX1
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX2
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX3
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX4
+# add wave -noupdate -radix hexadecimal /tb_kros/HEX5
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/seq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/freq_num_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_seq_disp/rom_addr_pass
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_throttle/freq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/rom_addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/next_seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounced_dn
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounce0/clk
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_state
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_down
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_up
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/debounce0/PB_cnt
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/seq_num
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/last
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[31]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[30]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[29]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[28]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[27]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[26]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[25]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[24]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[23]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[22]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[21]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[20]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[19]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[18]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[17]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[16]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/RAM2Port_inst/data[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/RAM2Port_inst/data
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wraddress
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/RAM2Port_inst/wren
+# add wave -noupdate /tb_kros/DUT/i_sequencer/RAM2Port_inst/rdaddress
+# add wave -noupdate /tb_kros/DUT/i_sequencer/RAM2Port_inst/q
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_a
+# add wave -noupdate -radix hexadecimal -childformat {{{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} -radix hexadecimal} {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} -radix hexadecimal}} -subitemconfig {{/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[15]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[14]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[13]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[12]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[11]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[10]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[9]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[8]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[7]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[6]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[5]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[4]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[3]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[2]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[1]} {-height 17 -radix hexadecimal} {/tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a[0]} {-height 17 -radix hexadecimal}} /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_a
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/address_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM2Port_inst/q_b
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/i_taglist_gen/RAMstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/clock_p
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/data_in
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/reset
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/load
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/addr
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/fstate
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/start_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/end_seq
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/curr_ram_count
+# add wave -noupdate -radix hexadecimal /tb_kros/DUT/i_sequencer/ROM_state_i/ram_counter
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/ROM_state_i/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/pb_seq_dn
+# add wave -noupdate /tb_kros/DUT/i_sequencer/up_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/dn_frm_pb
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_up
+# add wave -noupdate /tb_kros/DUT/i_sequencer/debounced_dn
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {1159141 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 363
+# configure wave -valuecolwidth 50
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {750033 ps}
+# run -all
+# ** Note: $stop    : /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v(66)
+#    Time: 1004400 ns  Iteration: 0  Instance: /tb_kros
+# Break in Module tb_kros at /data/haliu/NCG_Innovation_Project/knightriderinn/simulation/innovation_project-master/tb_kros.v line 66
+# End time: 15:16:59 on Jan 19,2017, Elapsed time: 0:34:09
+# Errors: 0, Warnings: 12

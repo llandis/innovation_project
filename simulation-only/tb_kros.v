@@ -34,7 +34,7 @@ KROS_simonly DUT(
 
 initial begin
 	slow_clk = 0;
-	forever #50 slow_clk  = ~slow_clk;
+	forever #100 slow_clk  = ~slow_clk;
 end
 
 initial begin
